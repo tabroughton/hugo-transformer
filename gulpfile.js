@@ -54,7 +54,7 @@ gulp.task('minify-js', function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('../js'))
+    .pipe(gulp.dest('static/js'))
     .pipe(browserSync.reload({
       stream: true
     }))

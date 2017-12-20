@@ -1,7 +1,7 @@
 {
   "title": "Transformer",
   "name": "hugo-transformer",
-  "version": "0.1",
+  "version": "4.0.0-beta.2",
   "description": "Transformer is a theme for hugo based on Bootstrap 4.",
   "keywords": [
     "css",

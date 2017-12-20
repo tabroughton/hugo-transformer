@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "transformer"
+license = "MIT"
+licenselink = "https://github.com/tabroughton/hugo-transformer/blob/master/LICENSE.md"
+description = "A theme based on resume from startbootstrap"
+homepage = "http://www.tombroughton.me/"
+tags = []
+features = []
+min_version = "0.1"
+
+[author]
+  name = "Tom Broughton"
+  homepage = ""
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

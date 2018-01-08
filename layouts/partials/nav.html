@@ -11,16 +11,23 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        <a class="nav-link js-scroll-trigger" href="{{ if not .IsHome }}/{{ end }}#about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+        <a class="nav-link js-scroll-trigger" href="{{ if not .IsHome }}/{{ end }}#services">Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        <a class="nav-link js-scroll-trigger" href="{{ if not .IsHome }}/{{ end }}#experience">Experience</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        <a class="nav-link js-scroll-trigger" href="{{ if not .IsHome }}/{{ end }}#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+      {{ if eq .Section "blog" }}
+        <a class="nav-link js-scroll-trigger active" href="/blog">Blog</a>
+      {{ else }}
+        <a class="nav-link js-scroll-trigger" href="/blog">Blog</a>
+      {{ end }}
       </li>
     </ul>
   </div>
